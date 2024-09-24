@@ -1,0 +1,13 @@
+﻿.serie-header {
+    height: 50vh;
+    overflow: hidden;
+}
+
+    .serie-header .overlay {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    }
+
+.serie-info {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}

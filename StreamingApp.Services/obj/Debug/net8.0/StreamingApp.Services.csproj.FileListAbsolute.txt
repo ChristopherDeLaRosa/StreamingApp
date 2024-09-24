@@ -1,0 +1,16 @@
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\bin\Debug\net8.0\StreamingApp.Services.deps.json
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\bin\Debug\net8.0\StreamingApp.Services.dll
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\bin\Debug\net8.0\StreamingApp.Services.pdb
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\bin\Debug\net8.0\StreamingApp.Data.dll
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\bin\Debug\net8.0\StreamingApp.Data.pdb
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.csproj.AssemblyReference.cache
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.AssemblyInfoInputs.cache
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.AssemblyInfo.cs
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.csproj.CoreCompileInputs.cache
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.sourcelink.json
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\Streamin.AC872C7E.Up2Date
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.dll
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\refint\StreamingApp.Services.dll
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\StreamingApp.Services.pdb
+C:\Users\chris\Desktop\ASP_PROJECT\StreamingApp\StreamingApp.Services\obj\Debug\net8.0\ref\StreamingApp.Services.dll

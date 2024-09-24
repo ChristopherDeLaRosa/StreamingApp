@@ -1,0 +1,37 @@
+﻿@model IEnumerable<StreamingApp.Data.Entities.Producer>
+
+@{
+    ViewData["Title"] = "Productoras";
+}
+
+<div class="container mt-5">
+    <h2 class="text-white mb-4">Productoras</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a asp-action="Create" class="btn btn-primary">Agregar Productora</a>
+        <input type="text" class="form-control w-25" placeholder="Buscar productora...">
+    </div>
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th class="text-end">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producer in Model)
+            {
+                <tr>
+                    <td>@producer.Name</td>
+                    <td class="text-end">
+                        <a asp-action="Edit" asp-route-id="@producer.Id" class="btn btn-sm btn-secondary me-2">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@producer.Id" class="btn btn-sm btn-danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

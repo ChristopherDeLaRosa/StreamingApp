@@ -1,0 +1,93 @@
+﻿@* @model StreamingApp.Web.ViewModels.HomeViewModel
+
+<h1>Welcome to our Streaming App</h1>
+
+<form asp-action="Index" method="get">
+    <div class="form-group">
+        <label for="search">Search Series:</label>
+        <input type="text" name="search" class="form-control" value="@Model.Search" />
+    </div>
+    <div class="form-group">
+        <label for="producerId">Filter by Producer:</label>
+        <select name="producerId" asp-items="Model.Producers" class="form-control">
+            <option value="">All Producers</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="genreId">Filter by Genre:</label>
+        <select name="genreId" asp-items="Model.Genres" class="form-control">
+            <option value="">All Genres</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Apply Filters</button>
+</form>
+
+<div class="row">
+    @foreach (var serie in Model.Series)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="@serie.CoverImage" class="card-img-top" alt="@serie.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@serie.Name</h5>
+                    <p class="card-text">Producer: @serie.Producer</p>
+                    <p class="card-text">Genre: @serie.Genre</p>
+                    <a asp-action="Details" asp-route-id="@serie.Id" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div> *@
+
+@model StreamingApp.Web.ViewModels.HomeViewModel
+
+@{
+    ViewData["Title"] = @Model.Serie.Name;
+}
+<link rel="stylesheet" href="~/css/Details.css" />
+
+<div class="container mt-5">
+    <!-- Header con imagen de fondo -->
+    <div class="serie-header position-relative mb-5">
+        <img src="@Model.Serie.CoverImage" class="w-100" alt="@Model.Serie.Name">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="serie-info position-absolute bottom-0 start-0 p-4 text-white">
+            <h1>@Model.Serie.Name</h1>
+            <p>@Model.Serie.Producer.Name</p>
+            <p>@Model.Serie.PrimaryGenre @(Model.Serie.SecondaryGenre != null ? ", " + Model.Serie.SecondaryGenre : "")</p>
+        </div>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-player mb-5">
+        <video controls class="w-100">
+            <source src="@Model.Serie.VideoLink" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="serieTabs" role="tablist">
+        <li class="nav-item">
+            <button class="nav-link active" id="episodes-tab" data-bs-toggle="tab" data-bs-target="#episodes" type="button" role="tab">Episodios</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="related-tab" data-bs-toggle="tab" data-bs-target="#related" type="button" role="tab">Relacionados</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reseñas</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="serieTabsContent">
+        <div class="tab-pane fade show active" id="episodes" role="tabpanel">
+            <p class="text-white mt-4">Lista de episodios (contenido de ejemplo).</p>
+        </div>
+        <div class="tab-pane fade" id="related" role="tabpanel">
+            <p class="text-white mt-4">Series relacionadas (contenido de ejemplo).</p>
+        </div>
+        <div class="tab-pane fade" id="reviews" role="tabpanel">
+            <p class="text-white mt-4">Reseñas de usuarios (contenido de ejemplo).</p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,40 @@
+﻿@model StreamingApp.Web.ViewModels.GenreEditViewModel
+
+@{
+    ViewData["Title"] = "Editar Género";
+}
+
+<div class="container mt-5">
+    <h2 class="text-white mb-4">Editar Género</h2>
+    <form asp-action="Edit" method="post" class="needs-validation" novalidate>
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3 position-relative">
+            <input asp-for="Name" class="form-control" placeholder=" " required>
+            <label asp-for="Name" class="form-label">Nombre del Género</label>
+            <div class="invalid-feedback">
+                Por favor, ingresa un nombre válido.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+@* @section Scripts {
+    <script>
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('input', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        })();
+    *@ </script>
+}

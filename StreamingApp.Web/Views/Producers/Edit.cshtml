@@ -1,0 +1,21 @@
+﻿@model StreamingApp.Web.ViewModels.ProducerEditViewModel
+
+@{
+    ViewData["Title"] = "Editar Productora";
+}
+
+<div class="container mt-5">
+    <h2 class="text-white mb-4">Editar Productora</h2>
+    <form asp-action="Edit" method="post" class="needs-validation" novalidate>
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3 position-relative">
+            <input asp-for="Name" class="form-control" placeholder=" " required>
+            <label asp-for="Name" class="form-label">Nombre de la Productora</label>
+            <div class="invalid-feedback">
+                Por favor, ingresa un nombre válido.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
