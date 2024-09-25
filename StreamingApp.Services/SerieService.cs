@@ -36,7 +36,25 @@ namespace StreamingApp.Services
 
         public async Task<Serie> GetSerieByIdAsync(int id)
         {
-            return await _unitOfWork.Series.GetByIdAsync(id);
+            //return await _context.Series
+            //    .Include(s => s.Producer)
+            //    .FirstOrDefaultAsync(s => s.Id == id);
+
+            //funciona con este
+
+            return await _context.Series
+                   .Include(s => s.Producer)
+                    .Include(s => s.PrimaryGenre)
+                    .Include(s => s.SecondaryGenre) 
+                     .FirstOrDefaultAsync(s => s.Id == id);
+
+
+            //..................
+
+
+
+
+            //return await _unitOfWork.Series.GetByIdAsync(id);
         }
 
         public async Task<IEnumerable<Serie>> SearchSeriesByNameAsync(string name)
@@ -81,5 +99,7 @@ namespace StreamingApp.Services
                 await _unitOfWork.CompleteAsync();
             }
         }
+
+        
     }
 }
