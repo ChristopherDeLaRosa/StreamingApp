@@ -30,7 +30,7 @@ namespace StreamingApp.Services
 
         public async Task AddProducerAsync(Producer producer)
         {
-            await _unitOfWork.Producers.AddAsyc(producer);
+            await _unitOfWork.Producers.AddAsync(producer);
             await _unitOfWork.CompleteAsync();
 
         }

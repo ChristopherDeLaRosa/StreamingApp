@@ -39,7 +39,7 @@
     }
 </div> *@
 
-@model StreamingApp.Web.ViewModels.HomeViewModel
+@model StreamingApp.Web.ViewModels.DetailsSerieViewModel
 
 @{
     ViewData["Title"] = @Model.Serie.Name;
@@ -53,7 +53,7 @@
         <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
         <div class="serie-info position-absolute bottom-0 start-0 p-4 text-white">
             <h1>@Model.Serie.Name</h1>
-            <p>@Model.Serie.Producer.Name</p>
+            <p>@Model.Serie.Name</p><!--validar esta linea-->
             <p>@Model.Serie.PrimaryGenre @(Model.Serie.SecondaryGenre != null ? ", " + Model.Serie.SecondaryGenre : "")</p>
         </div>
     </div>

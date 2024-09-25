@@ -1,4 +1,5 @@
 ﻿using StreamingApp.Data.Common;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace StreamingApp.Data.Entities
@@ -16,9 +17,7 @@ namespace StreamingApp.Data.Entities
         public Genre PrimaryGenre { get; set; }
 
         public int? SecondaryGenreId { get; set; }
-        public Genre SecondaryGenre { get; set; }
-
-
+        public Genre? SecondaryGenre { get; set; }
 
     }
 }

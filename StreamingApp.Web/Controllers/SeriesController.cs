@@ -49,7 +49,7 @@ namespace StreamingApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(SerieCreateViewModel viewModel)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 var serie = new Serie
                 {
@@ -103,7 +103,7 @@ namespace StreamingApp.Web.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 var serie = new Serie
                 {
@@ -113,15 +113,21 @@ namespace StreamingApp.Web.Controllers
                     VideoLink = viewModel.VideoLink,
                     ProducerId = viewModel.ProducerId,
                     PrimaryGenreId = viewModel.PrimaryGenreId,
-                    SecondaryGenreId = viewModel.SecondaryGenreId
+                    SecondaryGenreId = viewModel.SecondaryGenreId 
                 };
 
                 await _serieService.UpdateSerieAsync(serie);
                 return RedirectToAction(nameof(Index));
             }
+            else
+            {
+                viewModel.Producers = new SelectList(await _producerService.GetAllProducersAsync(), "Id", "Name");
+                viewModel.Genres = new SelectList(await _genreService.GetAllGenreAsync(), "Id", "Name");
 
-            viewModel.Producers = new SelectList(await _producerService.GetAllProducersAsync(), "Id", "Name");
-            viewModel.Genres = new SelectList(await _genreService.GetAllGenreAsync(), "Id", "Name");
+            }
+
+            //viewModel.Producers = new SelectList(await _producerService.GetAllProducersAsync(), "Id", "Name");
+            //viewModel.Genres = new SelectList(await _genreService.GetAllGenreAsync(), "Id", "Name");
             return View(viewModel);
         }
 
@@ -136,7 +142,7 @@ namespace StreamingApp.Web.Controllers
             return View(serie);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

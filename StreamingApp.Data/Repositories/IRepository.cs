@@ -12,7 +12,7 @@ namespace StreamingApp.Data.Repositories
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
         Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
-        Task AddAsyc(T entity);
+        Task AddAsync(T entity);
         void Remove(T entity);
         void Update(T entity);
     }

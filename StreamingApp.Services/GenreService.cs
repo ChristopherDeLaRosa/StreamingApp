@@ -29,7 +29,7 @@ namespace StreamingApp.Services
 
         public async Task AddGenreAsync(Genre genre)
         {
-            await _unitOfWork.Genres.AddAsyc(genre);
+            await _unitOfWork.Genres.AddAsync(genre);
             await _unitOfWork.CompleteAsync();
         }
 

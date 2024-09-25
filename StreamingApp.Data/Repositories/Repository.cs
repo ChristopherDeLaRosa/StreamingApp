@@ -18,8 +18,11 @@ namespace StreamingApp.Data.Repositories
             _context = context;
             _dbSet = _context.Set<T>();
         }
+
+
         public virtual async Task<IEnumerable<T>> GetAllAsync()
         {
+
             return await _dbSet.ToListAsync();
         }
 
@@ -31,7 +34,7 @@ namespace StreamingApp.Data.Repositories
         {
             return await _dbSet.Where(predicate).ToListAsync();
         }
-        public virtual async Task AddAsyc(T entity)
+        public virtual async Task AddAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
         }

@@ -8,7 +8,40 @@
     <h2 class="text-white mb-4">Editar Serie</h2>
     <form asp-action="Edit" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
         <input type="hidden" asp-for="Id" />
-        <!-- Campos similares a Create.cshtml -->
-        <!-- ... -->
+        <div class="mb-3 position-relative">
+            <input asp-for="Name" class="form-control" placeholder=" " required>
+            <label asp-for="Name" class="form-label">Nombre de la Serie</label>
+            <div class="invalid-feedback">
+                Por favor, ingresa un nombre válido.
+            </div>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ProducerId" class="form-label">Productora</label>
+            <select asp-for="ProducerId" asp-items="Model.Producers" class="form-select" required></select>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PrimaryGenreId" class="form-label">Género Primario</label>
+            <select asp-for="PrimaryGenreId" asp-items="Model.Genres" class="form-select" required></select>
+        </div>
+        <div class="mb-3">
+            <label asp-for="SecondaryGenreId" class="form-label">Género Secundario</label>
+            <select asp-for="SecondaryGenreId" asp-items="Model.Genres" class="form-select"></select>
+        </div>
+        <div class="mb-3 position-relative">
+            <input asp-for="CoverImage" class="form-control" placeholder=" " required>
+            <label asp-for="CoverImage" class="form-label">URL de Imagen de Portada</label>
+            <div class="invalid-feedback">
+                Por favor, ingresa una URL válida.
+            </div>
+        </div>
+        <div class="mb-3 position-relative">
+            <input asp-for="VideoLink" class="form-control" placeholder=" " required>
+            <label asp-for="VideoLink" class="form-label">URL del Video</label>
+            <div class="invalid-feedback">
+                Por favor, ingresa una URL válida.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>

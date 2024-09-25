@@ -14,7 +14,7 @@ namespace StreamingApp.Web.Controllers
             _producerService = producerService;
         }
 
-        public async Task<IActionResult> Ind3ex()
+        public async Task<IActionResult> Index()
         {
             var producers = await _producerService.GetAllProducersAsync();
             return View(producers);
@@ -95,12 +95,22 @@ namespace StreamingApp.Web.Controllers
             return View(producer);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            //await _producerService.DeleteProducerAsync(id);
+            //return RedirectToAction(nameof(Index));
+            var producer = await _producerService.GetProducersByIdAsync(id);
+            if (producer == null)
+            {
+                return NotFound();
+            }
+
             await _producerService.DeleteProducerAsync(id);
+            TempData["Message"] = $"La productora '{producer.Name}' ha sido eliminada exitosamente.";
             return RedirectToAction(nameof(Index));
         }
     }
+    
 }

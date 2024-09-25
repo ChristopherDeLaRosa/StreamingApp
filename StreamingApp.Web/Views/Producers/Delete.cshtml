@@ -4,6 +4,17 @@
     ViewData["Title"] = "Eliminar Productora";
 }
 
+@* <div class="container mt-5">
+    <h2 class="text-white mb-4">¿Eliminar Productora?</h2>
+    <div class="alert alert-warning">
+        <p>¿Estás seguro de que deseas eliminar la productora "<strong>@Model.Name</strong>"?</p>
+    </div>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div> *@
 <div class="container mt-5">
     <h2 class="text-white mb-4">¿Eliminar Productora?</h2>
     <div class="alert alert-warning">

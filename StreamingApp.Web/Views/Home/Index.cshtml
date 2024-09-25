@@ -1,133 +1,68 @@
-﻿@* @model StreamingApp.Web.ViewModels.HomeViewModel
+﻿@model StreamingApp.Web.ViewModels.FilterViewModel
 
-<h1>Welcome to our Streaming App</h1>
-
-<form asp-action="Index" method="get">
-    <div class="form-group">
-        <label for="search">Search Series:</label>
-        <input type="text" name="search" class="form-control" value="@Model.Search" />
-    </div>
-    <div class="form-group">
-        <label for="producerId">Filter by Producer:</label>
-        <select name="producerId" asp-items="Model.Producers" class="form-control">
-            <option value="">All Producers</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="genreId">Filter by Genre:</label>
-        <select name="genreId" asp-items="Model.Genres" class="form-control">
-            <option value="">All Genres</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Apply Filters</button>
-</form>
-
-<div class="row">
-    @foreach (var serie in Model.Series)
-    {
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="@serie.CoverImage" class="card-img-top" alt="@serie.Name">
-                <div class="card-body">
-                    <h5 class="card-title">@serie.Name</h5>
-                    <p class="card-text">Producer: @serie.Producer</p>
-                    <p class="card-text">Genre: @serie.Genre</p>
-                    <a asp-action="Details" asp-route-id="@serie.Id" class="btn btn-primary">Details</a>
-                </div>
-            </div>
-        </div>
-    }
-</div> *@
-
-@model StreamingApp.Web.ViewModels.HomeViewModel
 
 @{
     ViewData["Title"] = "Inicio";
 }
 
-<!-- Hero Section -->
-<div class="hero-section position-relative">
-    <img src="~/images/hero-background.jpg" class="w-100" alt="Hero Image">
-    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
-    <div class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white">
-        <h1>Bienvenido a StreamApp</h1>
-        <p>Explora nuestras series más populares</p>
-        <a href="#series" class="btn btn-primary">Ver Series</a>
-    </div>
-</div>
 
-<!-- Search and Filters -->
-<div class="container mt-5">
-    <div class="d-flex justify-content-center mb-4">
-        <input asp-for="Search" class="form-control w-50 me-2" placeholder="Buscar series...">
-        <button class="btn btn-primary">Buscar</button>
-    </div>
-    <div class="d-flex justify-content-center mb-5">
-        <div class="me-3">
-            @foreach (var genre in Model.Genres)
-            {
-                <a asp-action="Index" asp-route-genreId="@genre.Value" class="badge bg-secondary me-1">
-                    @genre.Text
-                </a>
-            }
-        </div>
-        <div>
-            @foreach (var producer in Model.Producers)
-            {
-                <a asp-action="Index" asp-route-producerId="@producer.Value" class="badge bg-secondary me-1">
-                    @producer.Text
-                </a>
-            }
-        </div>
-    </div>
-</div>
-
-<!-- Series Carousel -->
-<div id="series" class="container">
-    <h2 class="text-white mb-4">Series Populares</h2>
-    <div class="series-carousel d-flex overflow-auto">
-        @foreach (var serie in Model.Series)
-        {
-            <div class="serie-card position-relative me-3">
-                <img src="@serie.CoverImage" alt="@serie.Name" class="card-img">
-                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-2">
-                    <h5 class="text-white">@serie.Name</h5>
-                    <p class="text-white-50">@serie.Genre</p>
-                    <a asp-action="Details" asp-route-id="@serie.Id" class="stretched-link"></a>
-                </div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="filter-section">
+                <h5>Filter</h5>
+                @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                {
+                    <div class="mb-3">
+                        @Html.TextBoxFor(m => m.Search, new { @class = "form-control mb-2", placeholder = "Search..." })
+                        @Html.DropDownListFor(m => m.SelectedProducerId, Model.Producers, "Select a Producer", new { @class = "form-select mb-2" })
+                        @Html.DropDownListFor(m => m.SelectedGenreId, Model.Genres, "Select a Genre", new { @class = "form-select mb-2" })
+                    </div>
+                    <button type="submit" class="btn filter-btn w-100">Apply Filters</button>
+                }
             </div>
-        }
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                @foreach(var series in Model.Series)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="anime-card">
+                            <img src="@series.CoverImage" alt="@series.Name">
+                            <div class="p-3">
+                                <h5>@series.Name</h5>
+                                <p>@series.Genre | @series.Producer</p>
+                            </div>
+                            <a href="@Url.Action("Details", "Home", new { id = series.Id })" class="btn btn-primary anime-hover-btn">Ver más</a>
+                            
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
     </div>
 </div>
 
-@section Styles {
-    <style>
-        .hero-section {
-            height: 70vh;
-            overflow: hidden;
-        }
-        .hero-section .overlay {
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .series-carousel {
-            scroll-snap-type: x mandatory;
-        }
-        .serie-card {
-            min-width: 200px;
-            scroll-snap-align: start;
-        }
-        .serie-card .card-img {
-            border-radius: 5px;
-        }
-        .card-overlay {
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-            border-radius: 5px;
-        }
-    </style>
-}
+<style>
+    .anime-card {
+        position: relative;
+    }
 
-@* @section Scripts {
-    <script>
-        // por si quiero agregar funciones adicionales
-    </script>
-} *@
+    /* Ocultar el botón por defecto */
+    .anime-hover-btn {
+        display: none;
+        position: absolute;
+        bottom: 110px;
+        right: 10px;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    /* Mostrar el botón al hacer hover sobre la tarjeta */
+    .anime-card:hover .anime-hover-btn {
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreamingApp.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81a334c43028c5d4d9bac9bf20cdf5e1d76f3a1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+717438a266ba377ff168b376593d195f5b7ac2f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreamingApp.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreamingApp.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

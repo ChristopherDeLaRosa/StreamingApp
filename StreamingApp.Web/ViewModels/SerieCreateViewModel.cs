@@ -14,12 +14,13 @@ namespace StreamingApp.Web.ViewModels
 
         [Required(ErrorMessage = "You must enter the Cover Image")]
         [StringLength(300, ErrorMessage = "The name cannot exceed 300 characters.")]
+        [Url(ErrorMessage = "Must be a valid Image URL")]
         [Display(Name = "Cover Image")]
         public string CoverImage { get; set; }
 
         [Required(ErrorMessage = "You must enter the Video link (YouTube)")]
         [StringLength(500, ErrorMessage = "The name cannot exceed 500 characters.")]
-        [Url(ErrorMessage = "Must be a valid YouTuve URL")]
+        [Url(ErrorMessage = "Must be a valid YouTue URL")]
         [Display(Name = "YouTube Link")]
         public string VideoLink { get; set; }
 
