@@ -99,17 +99,8 @@ namespace StreamingApp.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            //await _producerService.DeleteProducerAsync(id);
-            //return RedirectToAction(nameof(Index));
-            var producer = await _producerService.GetProducersByIdAsync(id);
-            if (producer == null)
-            {
-                return NotFound();
-            }
-
             await _producerService.DeleteProducerAsync(id);
-            TempData["Message"] = $"La productora '{producer.Name}' ha sido eliminada exitosamente.";
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));         
         }
     }
     

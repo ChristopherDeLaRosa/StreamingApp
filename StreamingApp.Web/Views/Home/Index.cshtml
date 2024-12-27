@@ -5,7 +5,6 @@
     ViewData["Title"] = "Inicio";
 }
 
-
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-3">
@@ -33,7 +32,7 @@
                                 <h5>@series.Name</h5>
                                 <p>@series.Genre | @series.Producer</p>
                             </div>
-                            <a href="@Url.Action("Details", "Home", new { id = series.Id })" class="btn btn-primary anime-hover-btn">Ver más</a>
+                            <a href="@Url.Action("Details", "Home", new { id = series.Id })" class="btn btn-success anime-hover-btn">Ver más</a>
                             
                         </div>
                     </div>
@@ -58,7 +57,7 @@
         transition: opacity 0.5s ease;
     }
 
-    /* Mostrar el botón al hacer hover sobre la tarjeta */
+    /* Mostrar el boton al hacer hover sobre la tarjeta */
     .anime-card:hover .anime-hover-btn {
         display: block;
         opacity: 1;

@@ -16,8 +16,8 @@ namespace StreamingApp.Data.Entities
         public int PrimaryGenreId { get; set; }
         public Genre PrimaryGenre { get; set; }
 
-        public int? SecondaryGenreId { get; set; }
-        public Genre? SecondaryGenre { get; set; }
+        public int SecondaryGenreId { get; set; }
+        public Genre SecondaryGenre { get; set; }
 
     }
 }

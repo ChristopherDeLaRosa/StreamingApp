@@ -17,19 +17,17 @@
 				@Model.PrimaryGenre.Name
 				@if (Model.SecondaryGenre != null)
 				{
-					<span>, @Model.SecondaryGenre.Name</span>
+					<span> | @Model.SecondaryGenre.Name</span>
 				}
 			</p>
 
 		</div>
 	</div>
 
+	<!--Reproductor de video-->
 
-	@* <iframe width="560" height="315" src="@Model.FullVideoUrl" frameborder="0" allowfullscreen></iframe> *@
-	<iframe width="560" height="315" src="@Model.FullVideoUrl" frameborder="0" allowfullscreen></iframe>
+	<iframe width="1100" height="550" src="@Model.FullVideoUrl" frameborder="0" allowfullscreen></iframe>
 
-
-	@* <iframe width="560" height="315" src="@Model.FullVideoUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> *@
 	<!-- Tabs -->
 	<ul class="nav nav-tabs" id="serieTabs" role="tablist">
 		<li class="nav-item">

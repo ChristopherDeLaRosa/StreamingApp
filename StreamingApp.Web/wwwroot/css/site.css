@@ -91,3 +91,24 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* Cambiar color a verde cuando se pasa el mouse por encima */
+.nav-link:hover {
+    color: #4ade80; /* Verde */
+}
+
+/* Mantener el color verde cuando se selecciona el enlace */
+.nav-link:focus, .nav-link.active {
+    color: #4ade80; /* Verde */
+}
+
+/* Evitar el color predeterminado de los enlaces */
+.nav-link {
+    color: white;
+    cursor: pointer;
+}
+
+    /* Para mantener el estilo de un enlace seleccionado */
+    .nav-link:focus {
+        outline: none; /* Evitar el borde de enfoque por defecto */
+    }

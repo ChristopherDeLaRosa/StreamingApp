@@ -81,10 +81,6 @@ namespace StreamingApp.Data
                 .HasMaxLength(500)
                 .IsRequired();
 
-            //modelBuilder.Entity<Serie>()
-            //    .Property(s => s.ProducerId)
-            //    .IsRequired();
-
             #endregion
 
             #region "Producer"

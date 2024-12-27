@@ -34,9 +34,9 @@ namespace StreamingApp.Web.ViewModels
 
         
         [Display(Name = "Secondary Genre")]
-        public int? SecondaryGenreId { get; set; }
+        public int SecondaryGenreId { get; set; }
 
-        //Lists to selects
+        //listas para los selects
         public IEnumerable<SelectListItem> Producers { get; set; }
         public IEnumerable<SelectListItem> Genres { get; set; }
 

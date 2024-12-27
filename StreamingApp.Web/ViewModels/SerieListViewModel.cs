@@ -11,9 +11,6 @@ namespace StreamingApp.Web.ViewModels
         public string CoverImage { get; set; }
         public string Producer { get; set; }
         public string Genre { get; set; }
-        //public Producer Producer { get; set; }
-        //public Genre Genre { get; set; }
-
 
     }
 }

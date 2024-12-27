@@ -73,18 +73,14 @@ namespace StreamingApp.Web.Controllers
         {
 
             var serie = await _serieService.GetSerieByIdAsync(id);
-            var producer = await _producerService.GetProducersByIdAsync(id);
-            var genre = await _genreService.GetGenreByIdAsync(id);
+
             if (serie == null)
             {
                 return NotFound();
             }
 
-
             var viewModel = new DetailsSerieViewModel
             {
-               
-
                 Serie = serie,
                 Producer = serie.Producer,
                 PrimaryGenre = serie.PrimaryGenre,

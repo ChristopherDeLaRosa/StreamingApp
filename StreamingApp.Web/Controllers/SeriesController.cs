@@ -29,6 +29,7 @@ namespace StreamingApp.Web.Controllers
                 CoverImage = s.CoverImage,
                 Producer = s.Producer.Name,
                 Genre = $"{s.PrimaryGenre.Name}{(s.SecondaryGenre != null ? $", {s.SecondaryGenre.Name}" : "")}"
+                //Genre = $"{s.PrimaryGenre.Name}{(s.SecondaryGenre != null ? $", {s.SecondaryGenre.Name}" : "")}"
             }).ToList();
 
             return View(viewModel);
@@ -125,9 +126,6 @@ namespace StreamingApp.Web.Controllers
                 viewModel.Genres = new SelectList(await _genreService.GetAllGenreAsync(), "Id", "Name");
 
             }
-
-            //viewModel.Producers = new SelectList(await _producerService.GetAllProducersAsync(), "Id", "Name");
-            //viewModel.Genres = new SelectList(await _genreService.GetAllGenreAsync(), "Id", "Name");
             return View(viewModel);
         }
 

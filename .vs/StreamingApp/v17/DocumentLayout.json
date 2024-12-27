@@ -3,20 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\viewmodels\\detailsserieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\viewmodels\\detailsserieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6808500-ED96-4338-AFEA-B29B52943552}|StreamingApp.Data\\StreamingApp.Data.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.data\\entities\\serie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6808500-ED96-4338-AFEA-B29B52943552}|StreamingApp.Data\\StreamingApp.Data.csproj|solutionrelative:streamingapp.data\\entities\\serie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\controllers\\seriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\controllers\\seriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\series\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\series\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\viewmodels\\seriecreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\viewmodels\\seriecreateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E4323C2-54BC-4FC5-909D-F03B26A0AD53}|StreamingApp.Services\\StreamingApp.Services.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.services\\serieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E4323C2-54BC-4FC5-909D-F03B26A0AD53}|StreamingApp.Services\\StreamingApp.Services.csproj|solutionrelative:streamingapp.services\\serieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\producers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\producers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\producers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\producers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\series\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\series\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\series\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\series\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|c:\\users\\chris\\desktop\\asp_project\\streamingapp\\streamingapp.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3059E641-CCA2-45D8-BECE-6C7816AF6A7D}|StreamingApp.Web\\StreamingApp.Web.csproj|solutionrelative:streamingapp.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,55 +78,172 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Serie.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Data\\Entities\\Serie.cs",
+              "RelativeDocumentMoniker": "StreamingApp.Data\\Entities\\Serie.cs",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Data\\Entities\\Serie.cs",
+              "RelativeToolTip": "StreamingApp.Data\\Entities\\Serie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:25:01.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Series\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Series\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Series\\Edit.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Series\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T17:24:15.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SeriesController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Controllers\\SeriesController.cs",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Controllers\\SeriesController.cs",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Controllers\\SeriesController.cs",
+              "RelativeToolTip": "StreamingApp.Web\\Controllers\\SeriesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:17:25.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SerieCreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\ViewModels\\SerieCreateViewModel.cs",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\ViewModels\\SerieCreateViewModel.cs",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\ViewModels\\SerieCreateViewModel.cs",
+              "RelativeToolTip": "StreamingApp.Web\\ViewModels\\SerieCreateViewModel.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAIwCQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:14:26.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Genres\\Create.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Genres\\Create.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Genres\\Create.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Genres\\Create.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T22:00:56.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Producers\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Producers\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Producers\\Delete.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Producers\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T22:00:12.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Series\\Create.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Series\\Create.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Series\\Create.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Series\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T21:59:39.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAD0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T21:24:37.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "StreamingApp.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-25T21:22:06.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Series\\Index.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Series\\Index.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Series\\Index.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Series\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T21:17:50.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Producers\\Index.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Producers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Producers\\Index.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Producers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T21:17:32.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Genres\\Index.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Genres\\Index.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Genres\\Index.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Genres\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T21:05:13.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StreamingApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T21:00:29.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "StreamingApp.Web\\Views\\Home\\Details.cshtml",
               "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Views\\Home\\Details.cshtml",
               "RelativeToolTip": "StreamingApp.Web\\Views\\Home\\Details.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T19:59:34.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DetailsSerieViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\ViewModels\\DetailsSerieViewModel.cs",
-              "RelativeDocumentMoniker": "StreamingApp.Web\\ViewModels\\DetailsSerieViewModel.cs",
-              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\ViewModels\\DetailsSerieViewModel.cs",
-              "RelativeToolTip": "StreamingApp.Web\\ViewModels\\DetailsSerieViewModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T19:58:42.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SerieService.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Services\\SerieService.cs",
-              "RelativeDocumentMoniker": "StreamingApp.Services\\SerieService.cs",
-              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Services\\SerieService.cs",
-              "RelativeToolTip": "StreamingApp.Services\\SerieService.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAA3wGkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T19:52:53.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "StreamingApp.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\chris\\Desktop\\ASP_PROJECT\\StreamingApp\\StreamingApp.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "StreamingApp.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAABCwFoAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T19:51:28.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T20:41:12.039Z"
             }
           ]
         }
